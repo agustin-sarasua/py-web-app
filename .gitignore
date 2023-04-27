@@ -40,3 +40,26 @@ htmlcov/
 .dockerignore
 docker-compose.yml
 docker-compose.override.yml
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Ignore any .tfvars files that are automatically generated
+*.auto.tfvars
+
+# Ignore override files as they are usually used to override resources locally and not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+cli.tfrc
+terraform.rc

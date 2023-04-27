@@ -21,5 +21,11 @@ push:
 clean:
 	docker image rm $(IMAGE_NAME):$(IMAGE_TAG)
 
+# Apply Terraform changes
+terraform-apply:
+	cd terraform && \
+	terraform init && \
+	terraform apply
+
 # Run all the steps
 deploy: build tag push clean
