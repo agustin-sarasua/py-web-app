@@ -44,3 +44,5 @@ rollout:
 
 # Run all the steps
 deploy: build tag push clean
+
+rolling-update: update rollout
